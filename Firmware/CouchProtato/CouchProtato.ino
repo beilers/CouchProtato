@@ -1,9 +1,15 @@
-void setup() {
-  // put your setup code here, to run once:
+#include "CouchProtatoPower.h"
 
+CouchProtatoPower pwr;
+
+void setup() 
+{
+  pwr.begin();
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-
+void loop() 
+{
+  pwr.isCharging();
+  pwr.getBatteryVoltage();
+  //pring this information to my watch screen
 }
